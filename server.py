@@ -5,7 +5,7 @@ from flask import Flask
 PORT = int(os.environ['PORT'])
 app = Flask(__name__)
 
-@app.route('/api/v1/hello')
+@app.route('/')
 def index():
     return 'hello Dockerfile'
 
